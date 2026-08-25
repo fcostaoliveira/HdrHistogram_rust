@@ -195,8 +195,8 @@ mod v2_deflate_serializer;
 pub use self::v2_deflate_serializer::{V2DeflateSerializeError, V2DeflateSerializer};
 
 mod deserializer;
-pub(crate) use self::deserializer::{varint_read_slice, zig_zag_decode};
 pub use self::deserializer::{DeserializeError, Deserializer};
+pub(crate) use self::deserializer::{varint_read_slice, zig_zag_decode};
 pub(crate) use self::v2_serializer::{varint_write, zig_zag_encode};
 
 pub mod interval_log;
